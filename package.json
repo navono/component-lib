@@ -2,9 +2,10 @@
   "name": "component-lib",
   "version": "0.1.0",
   "description": "an example component library build with React!",
-  "main": "(index.js)build/index.js",
+  "main": "build/index.js",
   "scripts": {
     "build": "babel lib -d build",
+    "build:watch": "babel lib -w -d build",
     "lint": "eslint lib/**; exit 0",
     "lint:watch": "esw -w lib/**",
     "prepublish": "npm run build"
